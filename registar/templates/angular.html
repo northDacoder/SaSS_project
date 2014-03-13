@@ -1,0 +1,58 @@
+{% load static %}
+
+<!doctype html>
+<html>
+	<head>
+
+        <!-- Mobile Meta Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS Files -->
+        <link rel="stylesheet" href="{% get_static_prefix %}css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% get_static_prefix %}css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% get_static_prefix %}css/bootstrap.css">
+        <link rel="stylesheet" href="{% get_static_prefix %}css/jumbotron.css">
+        <link rel="stylesheet" href="{% get_static_prefix %}css/signin.css">
+        <link rel="stylesheet" href="{% get_static_prefix %}css/sticky-footer.css">
+
+        <!-- Custom CSS FILES -->
+        <link href="{% get_static_prefix %}css/index.css" rel="stylesheet" type="text/css">
+
+        <!-- Jquery JS files -->
+        <script src="{% get_static_prefix %}js/vendor/jquery-1.11.0.js"></script>
+
+        <!-- Bootstrap JavaScript Files -->
+        <script src="{% get_static_prefix %}js/vendor/bootstrap.js"></script>
+
+        <!-- Angular Files -->
+        <script src="{% get_static_prefix %}js/vendor/angular.js"></script>
+        <script src="{% get_static_prefix %}js/vendor/angular-route.js"></script>
+        <script src="{% get_static_prefix %}js/vendor/angular-resource.js"></script>
+
+        <!-- Controllers -->
+        <script src="{% get_static_prefix %}js/controllers/indexController.js"></script>
+        <script src="{% get_static_prefix %}js/controllers/addStudentController.js"></script>
+        <script src="{% get_static_prefix %}js/controllers/addProjectController.js"></script>
+        <script src="{% get_static_prefix %}js/controllers/studentController.js"></script>
+
+        <!-- JavaScript Files -->
+        <script src="{% get_static_prefix %}js/app.js"></script>
+        <script src="{% get_static_prefix %}js/factory.js"></script>
+
+	</head>
+<body>
+
+    <nav class="navbar navbar-inverse" role="navigation" id="ang-header">
+        DJ Angular with Rudy
+        <button class="btn btn-default"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></button>
+    </nav>
+
+    <div ng-app="registar">
+        <div ng-view class="row">
+
+        </div>
+    </div>
+
+
+</body>
+</html>
