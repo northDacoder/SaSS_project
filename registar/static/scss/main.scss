@@ -1,6 +1,6 @@
 $white: "#fff";
 
-@mixin border($size) {
+@mixin borders($size) {
   border: $size solid black;
 }
 
@@ -21,11 +21,11 @@ $white: "#fff";
 }
 
 .flag1 {
-  @include borders:
+  @include borders(1px):
   background-color: purple;
 }
 
 .flag2 {
-  @include borders:
+  @include borders(5px):
   background-color: red;
 }
