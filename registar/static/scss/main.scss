@@ -19,3 +19,13 @@ $white: "#fff";
     }
   }
 }
+
+.flag1 {
+  @include borders:
+  background-color: purple;
+}
+
+.flag2 {
+  @include borders:
+  background-color: red;
+}
