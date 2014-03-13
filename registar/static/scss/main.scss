@@ -1,5 +1,8 @@
 $white: "#fff";
 
+@mixin border($size) {
+  border: $size solid black;
+}
 
 .test {
   color: $white;
